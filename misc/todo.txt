@@ -1,0 +1,6 @@
+Todo:
+
+Skapa kundvagn där kunden kundvagn
+- Lägga till fisk (om det finns)
+- Se totalpris
+- "Genomföra" köp (fisk dras bort ifrån lista)

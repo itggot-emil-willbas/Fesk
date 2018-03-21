@@ -1,0 +1,94 @@
+body {
+    background: lightcoral;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color:black;
+}
+
+h1 {
+    color:white;
+    text-align: center;
+}
+
+form {
+    
+    background: white;
+    border-radius:5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width:200px;
+    min-height: 30vh;
+    margin:auto;
+    padding: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+form input {
+    padding:5px;
+    display:block;
+    border-radius: 5px;
+    margin-top:10px;
+
+}
+
+label, input[type="radio"] {
+    display:inline;
+}
+
+
+
+table {
+    min-width:736px;
+    border-collapse: collapse;
+    margin:auto;
+    background: white;
+    border-radius:5px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+thead {
+    border-top: 2px solid #aaaaaa;
+    text-align:left;
+}
+th {
+    border: 0;
+    padding: 12px 5px;
+    text-align:center;
+}
+tbody {
+    border-top:0;
+    padding: 30px;
+}         
+td {
+    padding: 10px 5px;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+    text-align:left;
+}
+
+td a {
+    color:lightgray;
+}
+
+body > a, body > div > a {
+    display: inline-block;
+    margin: 5px;
+    padding:10px;
+    background:white;
+    color:lightcoral;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    border-radius:5px;
+    border:1px lightcoral solid;
+}
+
+body > a:hover, body > div > a:hover {
+    color:white;
+    background:lightcoral;
+    border:1px white solid;
+}

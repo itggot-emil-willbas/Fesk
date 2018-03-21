@@ -1,0 +1,13 @@
+
+
+h1 Ändra pris på:#{fishname[0]}
+
+h2 Id:#{fish_id}
+
+form action="/inventory/#{fish_id}/edit_price" method="POST"
+    label Hur vill du ändra priset?
+    input type="number" name="number"
+    input type="submit" value="Lägg till"
+
+a href="/inventory" Back
+

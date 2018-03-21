@@ -1,0 +1,38 @@
+h1 Logga in.
+
+form action="/login" method="post"
+    /!Vid flera inputs med samma "name": value blir parametern
+    
+    input type="radio" name="type_of_user" value="admin" 
+    label Admin
+    br 
+    
+    input type="radio" name="type_of_user" value="customer" 
+    label Customer
+    input type="text" name="username" placeholder="username"/
+    input type="text" name="password" placeholder="password"/
+    input type="submit" value="submit"/
+br
+br
+a href="/adminregister" Admin registrera in
+
+br
+
+a href="/customerregister" Kund registrera in
+
+
+
+br
+
+/!
+    - var = "Emil"
+
+/!
+    - 5.times do
+        .diven
+            p 
+                | Cool! 
+                =  var 
+
+
+/! Lite comments

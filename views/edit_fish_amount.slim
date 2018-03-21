@@ -1,0 +1,10 @@
+h1 Namn:#{fishname[0]}
+
+h2 Id:#{fish_id}
+
+form action="/inventory/#{fish_id}/edit_amount" method="POST"
+    label Hur många enheter vill du LÄGGA TILL?
+    input type="number" name="number"
+    input type="submit" value="Lägg till"
+
+a href="/inventory" Back

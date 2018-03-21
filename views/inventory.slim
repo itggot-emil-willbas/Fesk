@@ -1,0 +1,60 @@
+h1 Inventory 
+         
+                    
+ 
+
+/p #{result}
+
+/br
+/p #{test}
+
+
+/- #{result}.each do |item|
+/    p 
+/        = item
+
+/- for item in #{result} do
+/    p 
+/       #{item[0,0]}
+  
+/- for item in result do
+/  p #{item}  
+
+table
+    tbody
+        tr 
+            th Namn
+            th Antal
+            th Pris
+
+        - if session[:type_of_user] == "admin"    
+            - for item in result do 
+                / Någon conditional som begränsar customer här
+            
+                tr
+                    td #{item[1]}
+                        
+                    td #{item[2]}  <a href="/inventory/#{item[0]}/edit_amount">edit</a> 
+                                    
+                    td #{item[3]}  <a href="/inventory/#{item[0]}/edit_price">edit</a>
+        - else
+            - for item in result do 
+               
+            
+                tr
+                    td #{item[1]}
+                        
+                    td #{item[2]}   
+                                    
+                    td #{item[3]}  
+       
+                
+
+br
+
+- if session[:type_of_user] == "admin"
+
+    a href="/mainadmin" Back
+
+- else 
+    a href="/maincustomer" Back
